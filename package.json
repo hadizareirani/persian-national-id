@@ -1,0 +1,16 @@
+{
+  "name": "persian-national-id",
+  "version": "1.0.0",
+  "description": "This package is a validator for the Persian national id and generates a valid Persian national id",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "persian",
+    "persian national id",
+    "national id"
+  ],
+  "author": "Hadi Zare Irani",
+  "license": "ISC"
+}
