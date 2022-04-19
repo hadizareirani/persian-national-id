@@ -1,6 +1,6 @@
 {
   "name": "persian-national-id",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This package is a validator for the Persian national id and generates a valid Persian national id",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,20 @@
   },
   "keywords": [
     "persian",
+    "farsi",
+    "code melli",
+    "javascript",
     "persian national id",
     "national id"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arezhz/persian-national-id.git"
+  },
   "author": "Hadi Zare Irani",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arezhz/persian-national-id/issues"
+  },
+  "homepage": "https://github.com/arezhz/persian-national-id"
 }

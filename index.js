@@ -1,5 +1,5 @@
-function validNationalId(nationalId) {
-  let code = nationalId.toString();
+function ValidNationalId(nationalId = '') {
+  let code = nationalId;
   const sameNumber =
     code === "0000000000" ||
     code === "1111111111" ||
@@ -14,7 +14,7 @@ function validNationalId(nationalId) {
 
   const valueLength = code ? code.length : 0;
   if (valueLength === 0) {
-    return null;
+    return false;
   }
 
   if (valueLength < 10 || parseInt(code, 10) === 0 || sameNumber) {
@@ -35,13 +35,13 @@ function validNationalId(nationalId) {
     (result < 2 && checkCode === result) ||
     (result >= 2 && checkCode === 11 - result)
   ) {
-    return null;
+    return true;
   } else {
     return false;
   }
 }
 
-function generateNationalId() {
+function GenerateNationalId() {
   let nationalId = "";
   let sumOfNumbers = 0;
   for (var i = 10; i >= 2; i--) {
@@ -57,6 +57,6 @@ function generateNationalId() {
 }
 
 module.exports = {
-  validNationalId,
-  generateNationalId,
+  ValidNationalId,
+  GenerateNationalId,
 };
