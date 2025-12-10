@@ -2,26 +2,55 @@
   "name": "persian-national-id",
   "version": "1.0.2",
   "description": "This package is a validator for the Persian national id and generates a valid Persian national id",
-  "main": "index.js",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/esm/index.js",
+      "require": "./lib/cjs/index.js",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "node -e \"require('fs').rmSync('lib', {recursive: true, force: true})\"",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "build": "npm run clean && npm run build:cjs && npm run build:esm && npm run build:types",
+    "prepare": "npm run build",
+    "preversion": "npm run build",
+    "version": "git add -A lib",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "persian",
     "farsi",
     "code melli",
     "javascript",
+    "typescript",
     "persian national id",
-    "national id"
+    "national id",
+    "validator",
+    "esm",
+    "cjs"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arezhz/persian-national-id.git"
+    "url": "git+https://github.com/hadizareirani/persian-national-id.git"
   },
   "author": "Hadi Zare Irani",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arezhz/persian-national-id/issues"
+    "url": "https://github.com/hadizareirani/persian-national-id/issues"
   },
-  "homepage": "https://github.com/arezhz/persian-national-id"
+  "homepage": "https://github.com/hadizareirani/persian-national-id",
+  "devDependencies": {
+    "@types/node": "^24.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
 }
