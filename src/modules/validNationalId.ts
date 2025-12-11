@@ -1,5 +1,5 @@
 /**
- * Validates a Persian national ID (کد ملی) using the standard checksum algorithm.
+ * Validates a Persian national ID using the standard checksum algorithm.
  *
  * This function checks whether the provided national ID is valid according to
  * Iranian national identification standards. It verifies the format, length,

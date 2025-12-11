@@ -1,5 +1,5 @@
 /**
- * Generates a valid random Persian national ID (کد ملی).
+ * Generates a valid random Persian national ID.
  *
  * The generated national ID follows the standard Iranian national identification
  * number format, which is a 10-digit number with a check digit calculated
