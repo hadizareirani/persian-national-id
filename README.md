@@ -1,5 +1,9 @@
 # Persian National ID
 
+[![npm version](https://badge.fury.io/js/persian-national-id.svg)](https://www.npmjs.com/package/persian-national-id)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm downloads](https://img.shields.io/npm/dm/persian-national-id.svg)](https://www.npmjs.com/package/persian-national-id)
+
 A TypeScript/JavaScript package for validating and generating Persian (Iranian) national ID numbers (کد ملی).
 
 ## Features
@@ -86,9 +90,18 @@ console.log(id); // e.g., '0959744487'
 
 ## Contributing
 
-This is a open-source project. Fork the project, complete the code and send pull request.
+Contributions are welcome! This is an open-source project.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hz-irani/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/HadiZareIrani)

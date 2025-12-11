@@ -1,6 +1,6 @@
 {
   "name": "persian-national-id",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "This package is a validator for the Persian national id and generates a valid Persian national id",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -43,7 +43,7 @@
     "url": "git+https://github.com/hadizareirani/persian-national-id.git"
   },
   "author": "Hadi Zare Irani",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hadizareirani/persian-national-id/issues"
   },
